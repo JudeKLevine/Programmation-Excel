@@ -8,6 +8,6 @@ Function Fact(n As Integer) As Long
     For i = 1 To n
         produit = produit * i
         Next
-        
+     
     Fact = produit
 End Function
