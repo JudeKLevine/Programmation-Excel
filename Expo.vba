@@ -10,5 +10,5 @@ Function Exp_x(n As Integer, x As Integer) As Double
         res = res + (x ^ i) / (Fact(i))
         Next
     Exp_x = res
-        
+      
 End Function
