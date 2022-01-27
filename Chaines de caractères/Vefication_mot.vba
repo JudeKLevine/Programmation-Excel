@@ -5,9 +5,7 @@ Function VerifMots(ByVal S As String, ByVal mot1 As String, ByVal mot2 As String
     Dim i As Integer
     Dim test, rang1 As Integer
     Dim test2, rang2 As Integer
-    
-    
-    
+   
     Len1 = Len(mot1)
     Len2 = Len(mot2)
     test = 0
@@ -20,7 +18,7 @@ Function VerifMots(ByVal S As String, ByVal mot1 As String, ByVal mot2 As String
             rang1 = i
         End If
     Next
-    If test >= 0 Then
+    If test > 0 Then
         VerifMots = mot1 & " " & "est present au rang" & " " & rang1
     Else
         VerifMots = mot1 & " " & " est absent"
@@ -33,7 +31,7 @@ Function VerifMots(ByVal S As String, ByVal mot1 As String, ByVal mot2 As String
         End If
         Debug.Print Mid(S, i, Len1 + i - 1)
     Next
-    If test2 >= 0 Then
+    If test2 > 0 Then
         VerifMots = VerifMots & " " & mot2 & " " & "est present au rang" & " " & rang2
     Else
         VerifMots = VerifMots & " " & mot2 & " " & "est absent"
