@@ -13,7 +13,7 @@ Function VerifMots(ByVal S As String, ByVal mot1 As String, ByVal mot2 As String
     
     'test pour le premier mot
     For i = 1 To Len(S) - Len1 + 1
-        If StrComp(Mid(S, i, Len1 + i - 1), mot1, 0) = 0 Then
+        If StrComp(Mid(S, i, Len1), mot1, 0) = 0 Then
             test = test + 1
             rang1 = i
         End If
@@ -25,7 +25,7 @@ Function VerifMots(ByVal S As String, ByVal mot1 As String, ByVal mot2 As String
     End If
     'test pour le deuxième mot
     For i = 1 To Len(S) - Len2 + 1
-        If StrComp(Mid(S, i, Len2 + i - 1), mot2, 0) = 0 Then
+        If StrComp(Mid(S, i, Len2), mot2, 0) = 0 Then
             test2 = test2 + 1
             rang2 = i
         End If
