@@ -22,8 +22,8 @@ Function Vendredi_13() As Integer
     Vendredi_13 = result
     
 End Function
-Sub jour_semaine()
-    
+
+Sub test()
     Debug.Print Vendredi_13()
 End Sub
 
