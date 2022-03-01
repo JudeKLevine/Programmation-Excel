@@ -15,7 +15,6 @@ Function recupereparametre() As parametre
     ReDim PARA(1)
     
     diff = Cells(3, 2).Value
-    PARA.min = 1
     
     Select Case diff
         Case 0
